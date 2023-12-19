@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Open Orders</h1>
+
+    <div th:each="order : ${orders}">
+        <span th:text="${order.getId()}"></span>,
+        <span th:text="${order.getGuest()}"></span>, <span th:text="${order.getBeverage().getName()}"></span>
+    </div>
+
+</body>
+</html>
