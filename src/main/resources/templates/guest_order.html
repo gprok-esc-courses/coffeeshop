@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
+
+<section>
   <h1>Guest Order</h1>
 
     <form method="post" th:object="${orderDto}" th:action="@{/guest/order}">
@@ -17,5 +19,6 @@
 
 
     </form>
+</section>
 </body>
 </html>

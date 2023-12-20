@@ -7,6 +7,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.Set;
+
 @Getter
 @Setter
 @AllArgsConstructor
@@ -27,4 +29,8 @@ public class User {
 
     @Column(length = 20)
     private String role;
+
+    // Orders completed by the user
+    @OneToMany(mappedBy = "staff", fetch = FetchType.LAZY)
+    private Set<Order> orders;
 }

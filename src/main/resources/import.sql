@@ -8,3 +8,9 @@ INSERT INTO beverages (name) VALUES ('Latte');
 INSERT INTO beverages (name) VALUES ('Cappuccino');
 INSERT INTO beverages (name) VALUES ('Americano');
 
+INSERT INTO orders (completed, beverage_id, date_set, guest) VALUES (false, 4, NOW(), 'Tom');
+INSERT INTO orders (completed, beverage_id, date_set, guest) VALUES (false, 2, NOW(), 'Mary');
+INSERT INTO orders (completed, beverage_id, date_set, guest) VALUES (false, 1, NOW(), 'Jimmy');
+INSERT INTO orders (completed, beverage_id, date_set, guest) VALUES (false, 3, NOW(), 'Alice');
+INSERT INTO orders (completed, beverage_id, date_set, guest) VALUES (false, 4, NOW(), 'Bob');
+
